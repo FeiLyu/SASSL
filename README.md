@@ -109,6 +109,7 @@ def test(args, snapshot_path):
 - snapshot_path: folder for saving results.
 - args.model: model type.
 - args.model_path: trained model path.
+- get_model_metric(): which includes prediction, png2nifti, calculate_nsd_dsc.
 
 ## Suplementary information
 
