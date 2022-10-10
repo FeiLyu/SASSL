@@ -79,8 +79,8 @@ We have provided a template for training new models, where we have implemented t
             optimizer.zero_grad()
             loss.backward()
             optimizer.step()
-            lr_ = base_lr * (1.0 - iter_num_s / max_iterations_s) ** 0.9
-            for param_group in optimizer_s.param_groups:
+            lr_ = base_lr * (1.0 - iter_num / max_iterations) ** 0.9
+            for param_group in optimizer.param_groups:
                 param_group['lr'] = lr_
 
             iter_num = iter_num + 1
