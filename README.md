@@ -23,6 +23,7 @@ pytorch==1.9.0
 │   ├── train_0.2_l.xlsx (datasplit for 20% setting)
 │   ├── train_0.2_u.xlsx (datasplit for 20% setting)
 │   ├── train_0.3_l.xlsx (datasplit for 30% setting)
+│   ├── train_0.3_u.xlsx (datasplit for 30% setting)
 │   ├── test_slice.xlsx (datasplit for testing)
 │   ├── val_slice.xlsx (datasplit for validation)
 ├── MOS1000
