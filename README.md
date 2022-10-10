@@ -29,8 +29,8 @@ pytorch==1.9.0
 ├── MOS1000
 │   ├── NII (Original dataset in NIFTI)
 │   ├── PNG (Pre-processed dataset in PNG)
-│   ├── train_l.xlsx (datasplit)
-│   ├── train_u.xlsx (datasplit)
+│   ├── train_slice_label.xlsx (datasplit)
+│   ├── train_slice_unlabel.xlsx (datasplit)
 │   ├── test_slice.xlsx (datasplit for testing)
 │   ├── val_slice.xlsx (datasplit for validation)
 ```
