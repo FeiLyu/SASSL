@@ -50,44 +50,44 @@ python train_SAST.py
 We have provided a template for training other models, where we have implemented the dataloader, optimizer, etc.  
 
 ```python
-    for epoch in range(max_epoch):
-        print("Start epoch ", epoch+1, "!")
+for epoch in range(max_epoch):
+    print("Start epoch ", epoch+1, "!")
 
-        tbar = tqdm(range(len(unlabeled_dataloader)), ncols=70)
-        labeled_dataloader_iter = iter(labeled_dataloader)
-        unlabeled_dataloader_iter = iter(unlabeled_dataloader)
+    tbar = tqdm(range(len(unlabeled_dataloader)), ncols=70)
+    labeled_dataloader_iter = iter(labeled_dataloader)
+    unlabeled_dataloader_iter = iter(unlabeled_dataloader)
 
-        for batch_idx in tbar:
-            try:
-                input_l, target_l, file_name_l , lung_l = labeled_dataloader_iter.next()
-            except StopIteration:
-                labeled_dataloader_iter = iter(labeled_dataloader)
-                input_l, target_l, file_name_l , lung_l = labeled_dataloader_iter.next()
+    for batch_idx in tbar:
+        try:
+            input_l, target_l, file_name_l , lung_l = labeled_dataloader_iter.next()
+        except StopIteration:
+            labeled_dataloader_iter = iter(labeled_dataloader)
+            input_l, target_l, file_name_l , lung_l = labeled_dataloader_iter.next()
 
-            # load data
-            input_ul, target_ul, file_name_ul , lung_ul = unlabeled_dataloader_iter.next()
-            input_ul, target_ul, lung_ul = input_ul.cuda(non_blocking=True), target_ul.cuda(non_blocking=True), lung_ul.cuda(non_blocking=True)
-            input_l, target_l, lung_l = input_l.cuda(non_blocking=True), target_l.cuda(non_blocking=True), lung_l.cuda(non_blocking=True)
-
-
-            # Add impelmentation here: the training process
-            #-------------------------------------------------------------
-            #*************************************************************
-            #-------------------------------------------------------------
+        # load data
+        input_ul, target_ul, file_name_ul , lung_ul = unlabeled_dataloader_iter.next()
+        input_ul, target_ul, lung_ul = input_ul.cuda(non_blocking=True), target_ul.cuda(non_blocking=True), lung_ul.cuda(non_blocking=True)
+        input_l, target_l, lung_l = input_l.cuda(non_blocking=True), target_l.cuda(non_blocking=True), lung_l.cuda(non_blocking=True)
 
 
-            optimizer.zero_grad()
-            loss.backward()
-            optimizer.step()
-            lr_ = base_lr * (1.0 - iter_num / max_iterations) ** 0.9
-            for param_group in optimizer.param_groups:
-                param_group['lr'] = lr_
+        # Add impelmentation here: the training process
+        #-------------------------------------------------------------
+        #*************************************************************
+        #-------------------------------------------------------------
 
-            iter_num = iter_num + 1
-            writer.add_scalar('info/lr', lr_, iter_num)
-            writer.add_scalar('info/total_loss', loss, iter_num)
-            logging.info('iteration %d : loss : %f' % (iter_num, loss.item()))
-    writer.close()
+
+        optimizer.zero_grad()
+        loss.backward()
+        optimizer.step()
+        lr_ = base_lr * (1.0 - iter_num / max_iterations) ** 0.9
+        for param_group in optimizer.param_groups:
+            param_group['lr'] = lr_
+
+        iter_num = iter_num + 1
+        writer.add_scalar('info/lr', lr_, iter_num)
+        writer.add_scalar('info/total_loss', loss, iter_num)
+        logging.info('iteration %d : loss : %f' % (iter_num, loss.item()))
+writer.close()
 ```
 
 ### 5. Testing
