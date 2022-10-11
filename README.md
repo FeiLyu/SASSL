@@ -38,7 +38,7 @@ pytorch==1.9.0
 - The lung regions can be extracted by a leading lung segmentation model provided by  [JoHof](https://github.com/JoHof/lungmask).
 
 
-### 3. Training Models
+### 3. Training Our Models
 
 ```python
 python train_SACPS.py
