@@ -47,7 +47,7 @@ python train_SAST.py
 
 ### 4. Training Other Models
 
-We have provided a template for training other models, where we have implemented the dataloader, optimizer, etc.  
+We have provided a template for training other models, where we have implemented the dataloader, optimizer, etc. The core codes are shown as below:
 
 ```python
 for epoch in range(max_epoch):
