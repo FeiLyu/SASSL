@@ -45,7 +45,7 @@ python train_SACPS.py
 python train_SAST.py
 ```
 
-### 4. Training New Models
+### 4. Training Other Models
 
 We have provided a template for training new models, where we have implemented the dataloader, optimizer, etc.  
 
@@ -70,7 +70,7 @@ We have provided a template for training new models, where we have implemented t
             input_l, target_l, lung_l = input_l.cuda(non_blocking=True), target_l.cuda(non_blocking=True), lung_l.cuda(non_blocking=True)
 
 
-            # Add new impelmentation here: design the training process
+            # Add impelmentation here: design the training process
             #-------------------------------------------------------------
             #*************************************************************
             #-------------------------------------------------------------
