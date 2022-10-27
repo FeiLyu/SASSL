@@ -5,7 +5,6 @@ Implementation of [Pseudo-Label Guided Image Synthesis for Semi-Supervised COVID
 <p align="center">
     <img src="framework.png" align="center" width="50%">
 </p>
-Illustration of our motivation.
 
 ## Implementation
 
