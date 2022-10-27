@@ -1,8 +1,11 @@
 # Pseudo-Label Guided Image Synthesis for Semi-Supervised COVID-19 Pneumonia Infection Segmentation.
 
-Implementation of [Pseudo-Label Guided Image Synthesis for Semi-Supervised COVID-19 Pneumonia Infection Segmentation].
+Implementation of [Pseudo-Label Guided Image Synthesis for Semi-Supervised COVID-19 Pneumonia Infection Segmentation](https://ieeexplore.ieee.org/document/9931157).
 
-Code is coming soon.
+<p align="center">
+    <img src="framework.png" align="center" height="40%">
+</p>
+Illustration of our motivation.
 
 ## Implementation
 
@@ -133,3 +136,12 @@ Descriptive statistics, including x-, y- and z-spacing, of both datasets are sho
 - [Self-Training]: [NeurIPS 2020](https://proceedings.neurips.cc/paper/2020/hash/27e9661e033a73a6ad8cefcde965c54d-Abstract.html);  [code](https://github.com/tensorflow/tpu/tree/master/models/official/detection/projects/self_training)
 
 
+
+## Citation
+If you find this repository useful for your research, please cite the following: 
+```
+F. Lyu, M. Ye, J. F. Carlsen, K. Erleben, S. Darkner and P. C. Yuen, "Pseudo-Label Guided Image Synthesis for Semi-Supervised COVID-19 Pneumonia Infection Segmentation," in IEEE Transactions on Medical Imaging, 2022, doi: 10.1109/TMI.2022.3217501.
+```
+
+## Acknowledgments
+We thank Luo, Xiangde for sharing his codes, our code borrows heavily from https://github.com/HiLab-git/SSL4MIS.
