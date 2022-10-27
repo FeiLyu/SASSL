@@ -3,7 +3,7 @@
 Implementation of [Pseudo-Label Guided Image Synthesis for Semi-Supervised COVID-19 Pneumonia Infection Segmentation](https://ieeexplore.ieee.org/document/9931157).
 
 <p align="center">
-    <img src="framework.png" align="center" height="40%">
+    <img src="framework.png" align="center" width="50%">
 </p>
 Illustration of our motivation.
 
