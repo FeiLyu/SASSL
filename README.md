@@ -139,7 +139,9 @@ Descriptive statistics, including x-, y- and z-spacing, of both datasets are sho
 ## Citation
 If you find this repository useful for your research, please cite the following: 
 ```
-F. Lyu, M. Ye, J. F. Carlsen, K. Erleben, S. Darkner and P. C. Yuen, "Pseudo-Label Guided Image Synthesis for Semi-Supervised COVID-19 Pneumonia Infection Segmentation," in IEEE Transactions on Medical Imaging, 2022, doi: 10.1109/TMI.2022.3217501.
+F. Lyu, M. Ye, J. F. Carlsen, K. Erleben, S. Darkner and P. C. Yuen, 
+"Pseudo-Label Guided Image Synthesis for Semi-Supervised COVID-19 Pneumonia Infection Segmentation," 
+in IEEE Transactions on Medical Imaging, 2022, doi: 10.1109/TMI.2022.3217501.
 ```
 
 ## Acknowledgments
