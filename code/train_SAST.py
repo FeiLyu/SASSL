@@ -37,8 +37,8 @@ parser.add_argument('--root_path', type=str, default='/home/code/SSL/', help='Na
 parser.add_argument('--labeled_per', type=float, default=0.1, help='percent of labeled data')
 if False:
     parser.add_argument('--dataset_name', type=str, default='COVID249', help='Name of dataset')
-    parser.add_argument('--excel_file_name_label', type=str, default='train_0.2_l.xlsx', help='Name of dataset')
-    parser.add_argument('--excel_file_name_unlabel', type=str, default='train_0.11_u.xlsx', help='Name of dataset')
+    parser.add_argument('--excel_file_name_label', type=str, default='train_0.1_l.xlsx', help='Name of dataset')
+    parser.add_argument('--excel_file_name_unlabel', type=str, default='train_0.1_u.xlsx', help='Name of dataset')
 
     # path1
     parser.add_argument('--teacher_path', type=str, default='/home/code/SSL/exp/COVID249/model.pth', help='path of teacher model')
