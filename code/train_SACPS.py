@@ -46,7 +46,7 @@ else:
     parser.add_argument('--excel_file_name_unlabel', type=str, default='train_slice_unlabel.xlsx', help='Name of dataset')
 
 parser.add_argument('--exp', type=str, default='sacps', help='experiment_name')
-parser.add_argument('--model', type=str, default='unet2', help='model_name')
+parser.add_argument('--model', type=str, default='unet', help='model_name')
 parser.add_argument('--max_epoch', type=int, default=20, help='maximum epoch number to train')
 parser.add_argument('--batch_size', type=int, default=8, help='batch_size per gpu')
 parser.add_argument('--deterministic', type=int,  default=1, help='whether use deterministic training')
