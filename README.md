@@ -39,6 +39,7 @@ pytorch==1.9.0
 - Convert the nifti images to int32 png format, then subtract 32768 from the pixel intensities to obtain the original Hounsfield unit (HU) values, saved in Image folder, similar to the processing steps in [Deeplesion](https://nihcc.app.box.com/v/DeepLesion/file/306055882594).
 - The lung regions can be extracted by a leading lung segmentation model provided by  [JoHof](https://github.com/JoHof/lungmask).
 - Pre-processed COVID249 can be downloaded from the [link](https://drive.google.com/file/d/1AnNY1fwjKrKtNeZxsegrU-vEDlnYqISF/view?usp=sharing). MOS1000 can be processed using the same steps, we do not provide all the processed images due to its large dataset size.
+- You can train SEAN models following [SEAN](https://github.com/ZPdesu/SEAN) , or download our pre-trained checkpoints from the [link](https://drive.google.com/file/d/1X4zWK5fV16ZRT7R55wCiyBFzat_9Lz1s/view?usp=share_link).
 
 
 ### 3. Training Our Models
